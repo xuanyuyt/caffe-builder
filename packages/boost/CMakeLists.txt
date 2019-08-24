@@ -45,6 +45,7 @@ set(Boost_USE_STATIC_RUNTIME ${Boost_USE_STATIC_RUNTIME} CACHE BOOL \"\")
     ExternalProject_Add(
         ${PROJECT_NAME}_download
         URL https://sourceforge.net/projects/boost/files/boost/1.61.0/boost_1_61_0.7z
+        URL_MD5 bb1dad35ad069e8d7c8516209a51053c
         DOWNLOAD_DIR ${CB_DOWNLOAD_DIR}
         CONFIGURE_COMMAND cmd /c bootstrap.bat
         BUILD_COMMAND ""

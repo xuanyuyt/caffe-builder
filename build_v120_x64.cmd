@@ -10,7 +10,7 @@ call "%VS120COMNTOOLS%..\..\VC\vcvarsall.bat" amd64
 :: configure
 :: Build all packages
 :: Use shared libraries when possible
-cmake -G Ninja ^
+cmake -G "Visual Studio 12 2013 Win64" ^
       -D CB_BUILD_ALL:BOOL=ON ^
       -D ZLIB_LIB_PREFIX:STRING=caffe ^
       -D ZLIB_BUILD_SHARED_LIBS:BOOL=ON ^

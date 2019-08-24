@@ -152,6 +152,7 @@ set(OpenCV_STATIC ${OpenCV_STATIC} CACHE BOOL \"\")
     ExternalProject_Add(
         ${PROJECT_NAME}_download
         URL  "https://github.com/opencv/opencv/archive/3.1.0.zip"
+        URL_MD5 6082ee2124d4066581a7386972bfd52a
         DOWNLOAD_NAME opencv-3.1.0.zip
         DOWNLOAD_DIR ${CB_DOWNLOAD_DIR}
         PATCH_COMMAND ${CMAKE_COMMAND} -E copy_if_different
